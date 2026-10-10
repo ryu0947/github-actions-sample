@@ -1,10 +1,16 @@
 name: Hello World
 
 on: 
-  workflow_dispatch:
+  push: 
+   branches:
+      - master 
 
 jobs:
-  say_hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a simple command
+        run: echo "Hello World!"
