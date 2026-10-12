@@ -1,16 +1,16 @@
 name: Hello World
 
-on: 
-  push: 
-   branches:
-      - master 
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Auto Deploy
-        run: echo "Success!"
+      - name: Print message
+        run: echo "Hello World!"
