@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  say_hello:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
