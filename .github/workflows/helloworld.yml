@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Print message
-        run: echo "Hello World!"
+        run: echo "Hello World"
